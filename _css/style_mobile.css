@@ -1,0 +1,592 @@
+
+/* -------- site colors red: #b20838 | orange: #f4911e | logo black: #231f20 -------- */
+
+html, body {	
+	background-size: cover;	
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+	background-image: url("_imgs/_mobile/_vert/landing_2_blur1.2.jpg");
+}
+
+#landing-logo {
+	
+	display: inline-block;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('_imgs/_comp/landing_logo.png');
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-size: 306px 225px;
+	
+}
+
+	.landing-btn-arrow {
+		
+		display: inline-block;
+		position: absolute;
+		bottom: 2%;
+		left: 50%;
+		margin-left: -30px;
+		width: 60px;
+		height: 60px;
+		background-image: url('_imgs/_comp/landing_arrow_btn.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		cursor: pointer;
+
+
+		-webkit-animation-name: pulse; 
+		-webkit-animation-duration: 1s; 
+		-webkit-animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes pulse {
+			from {
+				-webkit-transform: scale(1.0);
+				opacity: 1;
+			}
+			50% {
+				-webkit-transform: scale(1.1);
+				opacity: 1.0;
+			}
+			to { 
+				-webkit-transform: scale(1.0);
+				opacity: 1;
+			}
+		}
+
+
+
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------    FullPage CSS   -----------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------------------------------------------------------------------------  */
+
+
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 20px 8px 20px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 20px 0 20px 8px;
+    border-color: transparent transparent transparent #fff;	
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    margin-bottom: -35px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 10px;
+    width: 10px;
+    margin: -4px 0 0 -4px;
+    border-radius: 100%;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 7px;
+    width: 7px;
+    border: 0;
+    background: #f4911e;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------   NAVBAR SECTION  -----------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------------------------------------------------------------------------  */
+
+	
+.menu-btn{ 
+	display:inline-block;
+	margin: 0 10px;
+	padding: 25px 25px;
+	
+	font-family: "karbon-light";
+	color: #efefef;
+	-webkit-border-radius:10px;
+	border-radius:7px;
+	font-size: 0;
+	}
+	
+	#mobile-menu-aboutus {
+	
+		background: url('_imgs/_mobile/_icons/icon-aboutus@2x.png') no-repeat;
+		background-position: center top 10px;
+		background-size: contain;
+	
+	}
+	
+	#mobile-menu-wines {
+	
+		margin-left: 30px;
+		background: url('_imgs/_mobile/_icons/icon-wines@2x.png') no-repeat;
+		background-position: center top 5px;
+		background-size: contain;
+	
+	}
+	
+	#mobile-menu-images {
+	
+		margin-left: 30px;
+		background: url('_imgs/_mobile/_icons/icon-images@2x.png') no-repeat;
+		background-position: left -5px top 7px;
+		background-size: contain;
+		padding: 22px 22px;
+	
+	}
+	
+	#mobile-menu-contact {
+	
+		background: url('_imgs/_mobile/_icons/icon-contact@2x.png') no-repeat;
+		background-position: left 8px top 5px;
+		background-size: contain;
+	
+	}
+	
+#menu{
+	background:rgba(244,145,30,1	);	
+	-webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.3);
+	
+	font-size: 15px; 
+	position:fixed;
+	top:0;
+	left:0;
+	height:60px;
+	z-index:60;
+	width:100%;
+	margin:0
+	}
+
+
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                  -----------------------------------------------  */
+/*  -----------------------------------------------   BODY SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                  -----------------------------------------------  */
+/*  ----------------------------------------------------------------------------------------------------------------  */
+	
+	#aboutus-wrapper {
+		
+		display: block;
+		width: 100%;
+		height: 100%;
+		
+		text-align: center;
+		
+		background: url('_imgs/_mobile/domain.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+		font-family: 'karbon-light';
+	}
+	
+		#aboutus-container {
+			
+			display: inline-block;
+			height: 100%;
+			width: 100%;	
+			text-align: left;
+		}
+		
+			#aboutus-header {
+				
+				display: block;
+				padding: 23px 15px 10px;;
+			
+				color: #EFEFEF;
+				font-size: 30px;
+			
+				background-color: rgba(10, 10, 10, 0.7);
+				
+			}
+		
+			.aboutus-content {
+				
+				display: block;
+				width: 92%;
+				padding: 4% 3% 4% 5%;
+				height: 41.5%;
+				margin-top: 100px;
+			
+				color: #EFEFEF;
+				font-size: 4.4vw;
+			
+				background-color: rgba(10, 10, 10, 0.7);
+			}
+			
+
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------   WINES SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------------------------------------------------------------------------  */
+			
+		
+	.wines {
+		
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-align: left;
+		
+		box-shadow: 0px 0px 30px 0px rgba(85,85,5,0.6);	
+		-moz-box-shadow: 0px 0px 30px 0px rgba(85,85,5,0.6);
+		-webkit-box-shadow: 0px 0px 30px 0px rgba(85,85,5,0.6); 
+		
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	
+		.wines-title-container {
+			display: inline-block;
+			margin: 70px 17px 20px;
+			padding: 13px 35px;
+			background: rgba(10,10,10,0.8);
+			
+			font-family: "karbon-thin";
+			font-size: 9vw;
+			color: #efefef;
+		}
+		
+		
+		.wines-info-container {
+			display: block;
+			margin: 0 30px 0;
+			height: 66%;
+			width: 78%;
+			padding: 10px;
+			
+			
+			font-size: 4.4vw;
+			color: #efefef;
+			font-family: "karbon-light";
+			
+			background: rgba(10,10,10,0.8);		
+			box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);	
+			-moz-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6); 
+		}
+		
+			.wines-info-left {
+				display: none;
+				width: 100%;
+				vertical-align: top;
+			}
+		
+			.wines-info-right {
+				display: block;
+				width: 100%;
+				vertical-align: top;		
+			}
+			
+			ul {
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+
+	#brouilly {
+		
+		background-image: url('_imgs/_mobile/_bottles/HDR_B_1.jpg');
+		
+	}
+
+	#coteBrouilly {
+		
+		background-image: url('_imgs/_mobile/_bottles/HDR_CB_2.jpg');
+		
+	}
+
+	#elixir {
+		
+		background-image: url('_imgs/_mobile/_bottles/HDR_E_1.jpg');
+		
+	}
+
+	#godefroy {
+		
+		background-image: url('_imgs/_comp/_bottles/HDR_GD_1.jpg');
+		
+	}
+
+	#passion {
+		
+		background-image: url('_imgs/_comp/_bottles/HDR_P_1.jpg');
+		
+	}
+
+
+
+/*  --------------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                      -----------------------------------------------  */
+/*  -----------------------------------------------   EN IMAGE SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                      -----------------------------------------------  */
+/*  --------------------------------------------------------------------------------------------------------------------  */
+			
+		
+	.media {
+		
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-align: left;
+		
+		background-image: url('_imgs/_photos/tasting-cellar.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+			
+		font-family: "karbon-thin";
+		color: #454545;
+		
+	}
+	
+		.media-title-container {
+			display: inline-block;
+			margin: 70px 17px 20px;
+			padding: 13px 35px;
+			background: rgba(10,10,10,0.8);
+			
+			font-family: "karbon-thin";
+			font-size: 6.4vw;
+			font-weight: bold;
+			color: #efefef;
+		}
+		
+		
+		.media-info-container {
+			display: block;
+			margin: 0 30px 0;
+			height: 66%;
+			width: 78%;
+			padding: 10px;
+			
+			
+			font-size: 4.2vw;
+			color: #efefef;
+			font-family: "karbon-light";
+			
+			background: rgba(10,10,10,0.8);		
+			box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);	
+			-moz-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6); 
+		}
+		
+			.media-info-left {
+				display: block;
+				width: 100%;
+				vertical-align: top;
+				margin-bottom: 10px;
+			}
+			
+				.media-if-GH {
+					width: 100%;
+					height: 100%;
+				}
+					
+					.media-GHPassion {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_mobile/_gh/GHPassion2017.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					
+					.media-GHGodefroy {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_mobile/_gh/GHGodefroy2015.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					
+					.media-GHCoteDeBrouilly {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_mobile/_gh/GHCoteDeBrouilly2015.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					
+					.media-GHBrouilly {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_mobile/_gh/GHBrouilly2015.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+		
+			.media-info-right {
+				display: block;
+				width: 100%;
+				vertical-align: top;		
+			}
+			
+			ul {
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+			
+			.media-iframe {
+				width: 290px;
+				height: inherit;
+			}
+			
+
+
+/*  -------------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                     -----------------------------------------------  */
+/*  -----------------------------------------------   CONTACT SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                     -----------------------------------------------  */
+/*  -------------------------------------------------------------------------------------------------------------------  */
+
+	#contact-container {
+		display: block;
+		background: #b20838;
+		background-image: url('_imgs/_mobile/contact-mapx800.png');
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 100%;
+		width: 100%;
+		padding-top: 40px;
+		text-align: left;
+		
+		color: #efefef;
+		font-family: 'karbon-light';
+	}
+	
+		#contact-form, .contact-form-header { display: none; }
+		
+		#contact-header {
+			display: block;
+			margin-top: 40px;
+			margin-left: 15px;
+			margin-bottom: 20px;
+			font-size: 6.5vw;			
+		}
+		
+		/*		
+		#contact-form {
+			display: none;
+			margin: 15px;
+			margin-left: 5.8%;
+		}
+			
+			.contact-form-header {
+				display: none;
+				font-size: 1.8vw;
+			}
+			
+			.contact-form-fields {
+				display: none;
+				margin-bottom: -45px;
+			}
+				
+				.contact-form-input {
+					background: transparent;
+					border: solid #efefef 1px;
+					border-radius: 4px;
+					-moz-border-radius: 4px;
+					-webkit-border-radius: 4px;
+					outline: none;
+					
+					vertical-align: top;
+					
+					color: #efefef;
+					font-family: 'karbon-light';
+					font-size:  22px;
+					padding: 8px 13px;
+					width: 90%;
+				}
+
+				
+				.contact-form-text {
+					background: transparent;
+					border: solid #efefef 1px;
+					border-radius: 4px;
+					-moz-border-radius: 4px;
+					-webkit-border-radius: 4px;
+					outline: none;
+					
+					vertical-align: top;
+					
+					color: #efefef;
+					font-family: 'karbon-light';
+					font-size:  22px;
+					padding: 8px 13px;
+					width: 90%;
+					height: 200px;
+				} */
+		
+		#contact-info {
+			display: block;
+			margin-top: 0;
+			font-size: 6vw;
+		}
+			
+			.contact-info-header {
+				margin-top: 2%;
+				margin-left: 20px;
+				margin-right: 20px;
+				display: block;
+				font-size: 5.5vw;
+			}
+			
+			.cih-small {
+				font-size: 4.6vw;
+			}
+			
+			.contact-mail-link {
+				text-decoration: none;
+				color: #f4911e;
+				font-size: 4.6vw;
+			}
+
+

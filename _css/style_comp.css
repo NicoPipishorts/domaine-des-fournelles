@@ -1,0 +1,580 @@
+/* -------- site colors red: #b20838 | orange: #f4911e | logo black: #231f20 -------- */
+
+html, body {	
+	background-image: url("_imgs/_comp/landing_2_blur1.8.jpg");
+}
+
+#landing-logo {
+	
+	display: inline-block;
+	text-align: center;
+	width: 98%;
+	height: 98%;
+	
+	margin-top: 1.5%;
+	margin-bottom: 1;
+	
+	background-image: url('_imgs/_comp/landing_logo.png');
+	background-position: center 32%;
+	background-repeat: no-repeat;
+	background-size: 476px 350px;
+		
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+	border: 4px solid rgba(35, 31, 32, 1);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	
+}
+
+	.landing-btn-arrow {
+		
+		display: inline-block;
+		position: absolute;
+		bottom: 8%;
+		left: 50%;
+		margin-left: -60px;
+		width: 100px;
+		height: 100px;
+		background-image: url('_imgs/_comp/landing_arrow_btn.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		cursor: pointer;
+
+
+		-webkit-animation-name: pulse; 
+		-webkit-animation-duration: 1s; 
+		-webkit-animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes pulse {
+			from {
+				-webkit-transform: scale(1.0);
+				opacity: 1;
+			}
+			50% {
+				-webkit-transform: scale(1.1);
+				opacity: 1.0;
+			}
+			to { 
+				-webkit-transform: scale(1.0);
+				opacity: 1;
+			}
+		}
+
+
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------    FullPage CSS   -----------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------------------------------------------------------------------------  */
+
+
+.fp-controlArrow.fp-prev {
+    left: 25px;
+    width: 0;
+    border-width: 50px 22px 50px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 25px;
+    border-width: 50px 0 50px 22px;
+    border-color: transparent transparent transparent #fff;	
+}
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------   NAVBAR SECTION  -----------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------------------------------------------------------------------------  */
+
+
+a { text-decoration: none }
+a:active, a:link, a:visited { color: #efefef; }
+
+.menu-btn{ 
+	display:inline-block;
+	margin: 10px 30px;
+	padding: 7px 14px 6px;
+	
+	font-family: "karbon-light";
+	color: #efefef;
+	-webkit-border-radius:10px;
+	border-radius:7px;
+	}
+	
+		.menu-btn-on, .menu-btn a:hover, a:active {
+		border-bottom: 3px #dc5c48 solid;
+		padding: 7px 14px 6px;
+		margin: 20px -14px;
+		
+		-webkit-border-radius: 5px;
+		-moz-border-radius:    5px;
+		border-radius:         5px;
+		}
+	
+#menu{
+	background:rgba(244,145,30,0.9);	
+	-webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.3);
+	
+	font-size: 34px; 
+	position:fixed;
+	top:0;
+	left:0;
+	height:70px;
+	z-index:70;
+	width:100%;
+	margin:0
+	}
+
+
+
+/*  ----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                  -----------------------------------------------  */
+/*  -----------------------------------------------   BODY SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                  -----------------------------------------------  */
+/*  ----------------------------------------------------------------------------------------------------------------  */
+	
+	#aboutus-wrapper {
+		
+		display: block;
+		width: 100%;
+		height: 100%;
+		
+		text-align: center;
+		
+		background: url('_imgs/_comp/domain.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+		font-family: 'karbon-light';
+		
+	}
+	
+		#aboutus-container {
+			
+			position: absolute;
+			display: block;
+			height: 40%;
+			width: 60%;	
+			text-align: left;
+			bottom: 0;
+			
+			background-color: rgba(10, 10, 10, 0.7);
+			
+		}
+		
+			#aboutus-header {
+				
+				display: block;
+				margin: 20px 35px;
+			
+				color: #EFEFEF;
+				font-size: 50px;
+				
+			}
+		
+			.aboutus-content {
+				
+				display: block;
+				margin: 20px 75px;
+				margin-top: -380px;
+			
+				color: #EFEFEF;
+				font-size: 3vh;
+				
+			}
+
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------   WINES SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                   -----------------------------------------------  */
+/*  -----------------------------------------------------------------------------------------------------------------  */
+			
+		
+	.wines {
+		
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-align: left;
+		
+		background-position: center right;
+		background-repeat: no-repeat;
+		background-size: cover;
+			
+		font-family: "karbon-thin";
+		font-size: 4.2vw;
+		color: #efefef;
+		
+	}
+	
+		.wines-title-container {
+			display: inline-block;
+			margin: 8% 8% 60px;
+			padding: 13px 35px;
+			
+			background: rgba(10,10,10,0.8);		
+			box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);	
+			-moz-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6); 
+		}
+		
+		
+		.wines-info-container {
+			display: block;
+			margin: 0 12% 0;
+			height: auto;
+			width: 57%;
+			padding: 20px;
+			
+			font-size: 2.1vh;
+			color: #efefef;
+			font-family: "karbon-light";
+			
+			background: rgba(10,10,10,0.8);		
+			box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);	
+			-moz-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6); 
+		}
+		
+			.wines-info-left {
+				display: inline-block;
+				width: 38%;
+				vertical-align: top;
+				line-height: 28px;
+			}
+		
+			.wines-info-right {
+				display: inline-block;
+				width: 60%;
+				vertical-align: top;
+				line-height: 24px;				
+			}
+			
+			.show {
+				display: block;
+				width: 100%;
+				line-height: 24px;					
+			}
+			
+			.no-show {
+				display: none;				
+			}
+			
+			ul {
+				margin-top: 3px;
+				margin-bottom: 0;
+			}
+			
+
+	#brouilly {
+		
+		background-image: url('_imgs/_comp/_bottles/HDR_B_1.jpg');
+		
+	}
+
+	#coteBrouilly {
+		
+		background-image: url('_imgs/_comp/_bottles/HDR_CB_2.jpg');
+		
+	}
+
+	#elixir {
+		
+		background-image: url('_imgs/_comp/_bottles/HDR_E_1.jpg');
+		
+	}
+
+	#godefroy {
+		
+		background-image: url('_imgs/_comp/_bottles/HDR_GD_1.jpg');
+		
+	}
+
+	#passion {
+		
+		background-image: url('_imgs/_comp/_bottles/HDR_P_1.jpg');
+		
+	}
+
+
+
+/*  --------------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                      -----------------------------------------------  */
+/*  -----------------------------------------------   EN IMAGE SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                      -----------------------------------------------  */
+/*  --------------------------------------------------------------------------------------------------------------------  */
+			
+		
+	.media {
+		
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-align: left;
+		
+		background-image: url('_imgs/_photos/tasting-cellar.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+			
+		font-family: "karbon-thin";
+		font-size: 3.6vw;
+		color: #454545;
+		
+	}
+	
+		.media-title-container {
+			display: inline-block;
+			margin: 8% 8% 60px;
+			padding: 13px 35px;
+			
+			background: rgba(239,239,239,0.7);		
+			box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);	
+			-moz-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6); 
+		}
+		
+		
+		.media-info-container {
+			display: block;
+			margin: 0 6%;
+			height: 45%;
+			width: 85%;
+			padding: 50px 20px;
+			
+			font-size: 2.1vh;
+			font-family: "karbon-regular";
+			
+			background: rgba(239,239,239,0.8);		
+			box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);	
+			-moz-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6);
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(35,35,35,0.6); 
+		}
+		
+			.media-info-left {
+				display: inline-block;
+				width: 38%;
+				vertical-align: top;
+				padding: 20px;
+				line-height: 35px;
+				font-size: 1.7vw;
+			}
+			
+				.media-if-GH {
+					width: 100%;
+					height: 100%;
+				}
+					
+					.media-GHPassion {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_comp/_gh/GHPassion2017.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					
+					.media-GHGodefroy {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_comp/_gh/GHGodefroy2015.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					
+					.media-GHCoteDeBrouilly {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_comp/_gh/GHCoteDeBrouilly2015.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					
+					.media-GHBrouilly {
+						height: 98%;
+						width: 98%;
+						background-image: url('_imgs/_comp/_gh/GHBrouilly2015.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+		
+			.media-info-right {
+				display: inline-block;
+				width: 54%;
+				padding-left: 4%;
+				vertical-align: top;
+				line-height: 30px;				
+			}
+			
+			ul {
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+			
+			.media-iframe {
+				width: 560px;
+				height: 315px;
+			}
+			
+
+
+/*  -------------------------------------------------------------------------------------------------------------------  */
+/*  -----------------------------------------------                     -----------------------------------------------  */
+/*  -----------------------------------------------   CONTACT SECTION   -----------------------------------------------  */
+/*  -----------------------------------------------                     -----------------------------------------------  */
+/*  -------------------------------------------------------------------------------------------------------------------  */
+
+	#contact-container {
+		display: block;
+		background: #b20838;
+		background-image: url('_imgs/_comp/contact-map.png');
+		background-position: center right;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 100%;
+		width: 100%;
+		padding-top: 120px;
+		text-align: left;
+		
+		color: #efefef;
+		font-family: 'karbon-light';
+	}
+	
+		#contact-header {
+			display: block;
+			margin-left: 2%;
+			font-size: 3.6vw;			
+		}
+		
+		#contact-form {
+			display: inline-block;
+			width: 28%;
+			margin: 35px;
+			margin-left: 3%;
+		}
+		
+		#form_repsonse {
+			display: block;
+			margin-left: 3%;
+			margin-top: -10px;
+			margin-bottom: 10px;
+			padding-left: 35px;
+			font-size: 1.4vw;	
+			
+			background-image: url('_imgs/_comp/error_icon.png');
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+			background-position: left center;
+		}
+		
+		#form_finish {
+			display: none;
+			width: 100%;
+			text-align: center;
+			margin-top: 60px;
+			padding: 8px 12px;
+			border-radius: 5px;
+			padding-left: 35px;
+			font-size: 1.4vw;	
+			background: #b7f1bb;
+			color: #444;
+		}
+			
+			.contact-form-header {
+				display: block;
+				font-size: 1.8vw;
+			}
+			
+			.contact-form-fields {
+				display: block;
+				margin-bottom: -60px;
+				border: 0px solid #ffffff;
+			}
+				
+				.contact-form-input {
+					background: transparent;
+					border: solid #efefef 1px;
+					border-radius: 4px;
+					-moz-border-radius: 4px;
+					-webkit-border-radius: 4px;
+					outline: none;
+					
+					vertical-align: top;
+					
+					color: #efefef;
+					font-family: 'karbon-light';
+					font-size:  20px;
+					padding: 6px 11px;
+					width: 90%;
+				}
+				
+				.contact-form-button {
+					background: #efefef;
+					border: 0;
+					border-radius: 4px;
+					-moz-border-radius: 4px;
+					-webkit-border-radius: 4px;
+					outline: none;
+					
+					vertical-align: top;
+					
+					color: #231f20;
+					font-family: 'karbon-light';
+					font-size:  20px;
+					padding: 8px 13px;
+					cursor: pointer;
+					
+					margin-bottom: 0;
+				}
+				
+					.submit {
+						display: inline-block;
+						margin-top: 70px;
+					}
+
+				
+				.contact-form-text {
+					background: transparent;
+					border: solid #efefef 1px;
+					border-radius: 4px;
+					-moz-border-radius: 4px;
+					-webkit-border-radius: 4px;
+					outline: none;
+					
+					vertical-align: top;
+					
+					color: #efefef;
+					font-family: 'karbon-light';
+					font-size:  22px;
+					padding: 8px 13px;
+					width: 90%;
+					height: 200px;
+				}
+		
+		#contact-info {
+			display: inline-block;
+			vertical-align: top;
+			width: 25%;
+			margin: 35px;
+			margin-left: 0;
+		}
+			
+			.contact-info-header {
+				margin-top: 20px;
+				display: block;
+				font-size: 1.8vw;
+			}
+			
+			.cih-small {
+				font-size: 1.5vw;
+			}

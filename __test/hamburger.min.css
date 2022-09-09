@@ -1,0 +1,42 @@
+.button {
+  margin: 3px auto;
+}
+.button {
+  display: block;
+  background: #231f20;
+  width: 38px;
+  height: 35px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 9px 6px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.button.toggled span:first-child {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+.button.toggled span:nth-child(2) {
+  opacity: 0;
+}
+.button.toggled span:last-child {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
+.button span {
+  display: block;
+  background: #efefef;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.button span:nth-child(2) {
+  margin: 5px 0;
+}

@@ -1,0 +1,26 @@
+@import url("fonts.css");
+
+
+/* -------- site colors red: #b20838 | orange: #f4911e | logo black: #231f20 -------- */
+
+
+html, body {
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	color: #35424b; 
+	font-size: 105px; 
+	letter-spacing: 0px;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	
+	background-image: url("_imgs/_comp/landing_2_blur1.8.jpg");
+	background-size: cover;	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+.no-show { display: none; }
